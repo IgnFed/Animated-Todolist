@@ -1,0 +1,16 @@
+.outOfView{
+  position: fixed;
+  top: 100px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  left: 15px;
+  stroke: #fff;
+  fill: #fff;
+  color: #fff;
+  float: none;
+  stroke-dashoffset:0
+}
+.wrapper{
+  height: 200vh;
+}

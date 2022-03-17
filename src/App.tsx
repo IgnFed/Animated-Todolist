@@ -1,45 +1,14 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import './app.css'
+import { motion } from 'framer-motion'
+// import Drag from './components/Drag/Drag'
+// import Scroll from './components/Scroll/Scroll'
+// import Initial from './components/Initial/Initial'
+import ScrollLinked from './components/scroll-linked/ScrollLinked'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+export default function App(){
+  return(
+    <motion.div id='parent'>
+      <ScrollLinked />
+    </motion.div>
   )
 }
-
-export default App
